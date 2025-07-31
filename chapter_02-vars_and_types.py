@@ -1,0 +1,25 @@
+# Bind a message to a variable
+message = "a new message"
+# Print the message
+print(message)
+
+# Store and print a name of a very good person
+person_name = "Samwise Gamgee"
+# print(f"Hi {person_name}, would you like to learn some Python today?")
+print(f"\t {person_name.title()} is the name properly writen. \n we call him {person_name.lower()}, shily... \n we call him {person_name.upper()}, yelling!")
+
+# Store and print a famous person and citation from her
+famous_person = "ada lovelace"
+ada_quote = "The analytical engine has no pretensions whatever to originate anything. It can do whatever we know how to order it to perform."
+print(f"{famous_person.title()} once said: '{ada_quote}")
+
+# Use the string strip functions
+whitespaced = "\n  Joaozinho \tda Silva "
+print(whitespaced)
+print(whitespaced.lstrip())
+print(whitespaced.rstrip())
+print(whitespaced.strip())
+
+# Playing with suffixes
+filename = 'python_notes.txt'
+print(filename.removesuffix('.txt'))
