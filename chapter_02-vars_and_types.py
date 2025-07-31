@@ -23,3 +23,7 @@ print(whitespaced.strip())
 # Playing with suffixes
 filename = 'python_notes.txt'
 print(filename.removesuffix('.txt'))
+
+# Working with mathematical operations and strings
+mult8, div8 = 2 * 4, int(4 / (0.5))
+print("5 + 3=", 5 + 3, "\n10.000 - 9.992=", 10_000 - 9_992, "\n2 x 4=", mult8, "\n4 / (0.5)=", div8)
