@@ -45,3 +45,49 @@ except NameError:
   print("This doesn't seem to exist.")
 else:
   print("Something else happened.")
+
+# Make a list of places to visit
+places = ['India', 'Colombia', 'New Zealand', 'Ghana', 'Finland']
+
+print("This is the original list.")
+for place in places:
+  print(place)
+
+print("This is the sorted list.")
+for place in sorted(places):
+  print(place)
+
+print("This is the list in alphabetically reversed.")
+for place in sorted(places, reverse=True):
+  print(place)
+
+print("This is the original list.")
+for place in places:
+  print(place)
+
+# Permanently reverse the list
+print("This is the reversed list.")
+places.reverse()
+for place in places:
+  print(place)
+
+# Unreverse the list
+print("This is the original list, again.")
+places.reverse()
+for place in places:
+  print(place)
+
+# Save the list in alphabetical order
+places.sort()
+
+print("This is the sorted list. Permanent.")
+for place in places:
+  print(place)
+
+places.sort(reverse=True)
+print("Maybe not so permanent. Look at it go.")
+for place in places:
+  print(place)
+
+# Print out the number of listed countries 
+print(f"I'm going to visit {len(places)} countries.")
