@@ -81,3 +81,22 @@ for cube in cubes:
 print(f"The first three cubes are {cubes[:3]}")
 print(f"The cubes in the middle are {cubes[4:7]}")
 print(f"The last three cubes are {cubes[-3:]}")
+
+## Create a menu with 5 meals in a tuple
+
+meals = ('feijoada carioca', 'arroz carreteiro', 'tutu mineiro', 'moqueca baiana', 'bife com fritas')
+
+for meal in meals:
+    print(meal)
+
+try:
+    meals[0] = 'nothingness'
+except TypeError:
+    print("You can't feed a tuple, not even nothingness!")
+
+## Rewrite two of those meals
+
+meals = ('feijoada carioca', 'arroz carreteiro', 'tutu mineiro', 'pizza portuguesa', 'falafel com haloumi')
+
+for meal in meals:
+    print(meal)
