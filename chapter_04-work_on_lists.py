@@ -9,6 +9,21 @@ for sandwitch in sandwitches:
 
 print("I love sandwitches!\n\n")
 
+## Create a copy of that list, and see how it's kept
+
+friends_sandwitches = sandwitches[:]
+
+sandwitches.append('blt')
+friends_sandwitches.append('tuna & mayo')
+
+print('My favorite sandwitches are:')
+for sandwitch in sandwitches:
+    print(sandwitch)
+
+print("My friend's favorite sandwitches are:")
+for sandwitch in friends_sandwitches:
+    print(sandwitch)
+
 ## Generate a list of animals with similar characteristics
 
 animals = ['crab', 'vinegar-scorpion', 'armadillo']
@@ -40,23 +55,29 @@ print(min(numbers))
 print(max(numbers))
 print(sum(numbers))
 
-# Print out the even numbers between 1 and 20
+## Print out the even numbers between 1 and 20
 
 numbers = list(range(1,21,2))
 
 for number in numbers:
     print(number)
 
-# Print out the multiples of 3 between 1 and 30
+## Print out the multiples of 3 between 1 and 30
 
 numbers = list(range(3,31,3))
 
 for number in numbers:
     print(number)
 
-# Print out the cubes of the numbers from 1 to 10, using a list comprehension
+## Print out the cubes of the numbers from 1 to 10, using a list comprehension
 
 cubes = [number**3 for number in range(1,11)]
 
 for cube in cubes:
     print(cube)
+
+## Print out the three first, middle and last cubes in that list
+
+print(f"The first three cubes are {cubes[:3]}")
+print(f"The cubes in the middle are {cubes[4:7]}")
+print(f"The last three cubes are {cubes[-3:]}")
