@@ -91,3 +91,9 @@ for place in places:
 
 # Print out the number of listed countries 
 print(f"I'm going to visit {len(places)} countries.")
+
+# Intentionally generate an index error
+try:
+  print(places[5])
+except IndexError:
+  print("Index error succesfully generated.")
