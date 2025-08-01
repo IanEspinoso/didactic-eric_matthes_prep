@@ -69,7 +69,8 @@ numbers = list(range(3,31,3))
 for number in numbers:
     print(number)
 
-## Print out the cubes of the numbers from 1 to 10, using a list comprehension
+## Print out the cubes of the numbers from 1 to 10,
+## using a list comprehension
 
 cubes = [number**3 for number in range(1,11)]
 
@@ -84,7 +85,8 @@ print(f"The last three cubes are {cubes[-3:]}")
 
 ## Create a menu with 5 meals in a tuple
 
-meals = ('feijoada carioca', 'arroz carreteiro', 'tutu mineiro', 'moqueca baiana', 'bife com fritas')
+meals = ('feijoada carioca', 'arroz carreteiro', 'tutu mineiro',
+         'moqueca baiana', 'bife com fritas')
 
 for meal in meals:
     print(meal)
@@ -96,7 +98,12 @@ except TypeError:
 
 ## Rewrite two of those meals
 
-meals = ('feijoada carioca', 'arroz carreteiro', 'tutu mineiro', 'pizza portuguesa', 'falafel com haloumi')
+meals = ('feijoada carioca', 'arroz carreteiro', 'tutu mineiro',
+         'pizza portuguesa', 'falafel com haloumi')
 
 for meal in meals:
     print(meal)
+
+## Configure the editor to show a vertical line around the 80th characters,
+## following the PEP 8
+## Edit the whole program to follow that rule from the style guide 
