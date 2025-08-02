@@ -36,3 +36,26 @@ print(sum(numbers) != 21)
 print("\nIs the sum of thte numbers in the list different from 21?"
       "\nI predict False.")
 print(sum(numbers) != 20)
+
+# More tests, now using 'lower', 'and', 'or', 'in' and 'not in'
+
+print("\nIs 'Chlorela' in lower case the same as that algae?" "I predict True.")
+print('Chlorela'.lower() == algae)
+print("\nIs 'Spirulina' in lower case the same as the algae"
+      "I predict False.")
+print('Spirulina'.lower() == algae)
+
+print("\nAre the numbers 1 and 2 in the list? I predict True.")
+print(1 and 2 in numbers)
+print("\nAre the numbers 1 and 11 in the list? I predict False")
+print(1 and 11 in numbers)
+
+print("\nAre the numbers 3 or 11 in the list? I predict True.")
+print(3 in numbers or 11 in numbers)
+print("\nAre the numbers 7 or 21 in the list? I predict False.")
+print(7 in numbers or 21 in numbers)
+
+print("\nIs 5 not in the list? I predict False.")
+print(5 not in numbers)
+print("\nIs 99 not in the list? I predict True.")
+print(99 not in numbers)
