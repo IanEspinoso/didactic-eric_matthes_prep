@@ -59,3 +59,51 @@ print("\nIs 5 not in the list? I predict False.")
 print(5 not in numbers)
 print("\nIs 99 not in the list? I predict True.")
 print(99 not in numbers)
+
+# Test the color of the alien
+
+alien_color = 'green'
+
+if alien_color == 'green':
+    points = 5
+elif alien_color == 'yellow':
+    points = 10
+elif alien_color == 'red':
+    points = 15
+else:
+    points = 0
+print(f"You gained {points} points!")
+
+# Attribute a life stage acording to the person's age
+
+age = 36
+
+if age < 2:
+    stage = 'baby'
+elif age < 4:
+    stage = 'toddler'
+elif age < 13:
+    stage = 'child'
+elif age < 20:
+    stage = 'teenager'
+elif age < 65:
+    stage = 'adult'
+else:
+    stage = 'elder'
+    
+print(f"You are in the {stage} stage of life.")
+
+# Create a series of tests for a list
+
+favorite_fruits = ['strawberry', 'jackfruit', 'apple', 'banana']
+
+if len(favorite_fruits) < 3:
+    print("You don't realy like fruits, do you?")
+elif 'blueberry' in favorite_fruits:
+    print("You love blueberries!")
+elif 'guava' in favorite_fruits:
+    print("You love guava!")
+elif 'tamarind' in favorite_fruits:
+    print("You love tamarind!")
+else:
+    print("I don't seem to know what you like.")
