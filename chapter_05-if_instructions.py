@@ -1,4 +1,4 @@
-# Write 10 conditional tests, printing the predicted result before
+## Write 10 conditional tests, printing the predicted result before
 
 algae = 'chlorela'
 print("Is algae = 'chlorela'? I predict True.")
@@ -37,7 +37,7 @@ print("\nIs the sum of thte numbers in the list different from 21?"
       "\nI predict False.")
 print(sum(numbers) != 20)
 
-# More tests, now using 'lower', 'and', 'or', 'in' and 'not in'
+## More tests, now using 'lower', 'and', 'or', 'in' and 'not in'
 
 print("\nIs 'Chlorela' in lower case the same as that algae?" "I predict True.")
 print('Chlorela'.lower() == algae)
@@ -60,7 +60,7 @@ print(5 not in numbers)
 print("\nIs 99 not in the list? I predict True.")
 print(99 not in numbers)
 
-# Test the color of the alien
+## Test the color of the alien
 
 alien_color = 'green'
 
@@ -72,9 +72,9 @@ elif alien_color == 'red':
     points = 15
 else:
     points = 0
-print(f"You gained {points} points!")
+print(f"\nYou gained {points} points!")
 
-# Attribute a life stage acording to the person's age
+## Attribute a life stage acording to the person's age
 
 age = 36
 
@@ -91,19 +91,66 @@ elif age < 65:
 else:
     stage = 'elder'
     
-print(f"You are in the {stage} stage of life.")
+print(f"\nYou are in the {stage} stage of life.")
 
-# Create a series of tests for a list
+## Create a series of tests for a list
 
 favorite_fruits = ['strawberry', 'jackfruit', 'apple', 'banana']
 
 if len(favorite_fruits) < 3:
-    print("You don't realy like fruits, do you?")
+    print("\nYou don't realy like fruits, do you?")
 elif 'blueberry' in favorite_fruits:
-    print("You love blueberries!")
+    print("\nYou love blueberries!")
 elif 'guava' in favorite_fruits:
-    print("You love guava!")
+    print("\nYou love guava!")
 elif 'tamarind' in favorite_fruits:
-    print("You love tamarind!")
+    print("\nYou love tamarind!")
 else:
-    print("I don't seem to know what you like.")
+    print("\nI don't seem to know what you like.")
+
+## Evaluate the list of Discworld's current users, saying hi to them
+## with a special shoutout to Death
+
+## Also test with an empty 'current_users = []'
+ 
+current_users = ['Death', 'Rincewind', 'Sam Vines', 'Twoflower', 'Ysabell']
+
+if current_users:
+    for current_user in current_users:
+        if current_user is 'Death':
+            print(f"\nHi, {current_user}. Would you like to see a status report?")
+        else:
+            print(f"\nHi, {current_user}. Thank you for logging in again.")
+else:
+    print("\\nWe need to find more users!")
+
+
+## Verify the availability for users
+
+current_users_low = []
+
+for current_user in current_users:
+    current_users_low.append(current_user.lower())    
+
+new_users = ['Rincewind', 'Twoflower', 'Angua', 'Weatherwax', 'Nanny Ogg']
+
+for new_user in new_users:
+    if new_user.lower() in current_users_low:
+        print(f"\nUser {new_user.title()} is not available.")
+    else:
+        print(f"\nWelcome, {new_user.title()}!")
+
+## Add the appropriate suffix to the ordinal number
+
+numbers = list(range(1,10))
+common_suffix = 'th'
+
+for number in numbers:
+    if number is 1:
+        print(number, 'st', sep='')
+    elif number is 2:
+        print(number, 'nd', sep='')
+    elif number is 3:
+        print(number, 'rd', sep='')
+    else:
+        print(number, common_suffix, sep='')
