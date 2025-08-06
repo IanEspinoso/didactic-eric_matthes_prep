@@ -6,6 +6,7 @@ car = input(prompt)
 
 print(f"Let me find out if we have a {car.title()} here for you.")
 
+
 ## Create a table clerk for a restaurant with a condition
 
 prompt = "Table for how many?"
@@ -16,6 +17,7 @@ if int(clients) >= 8:
     print(f"Table for {clients}. Current waiting time is 20 minutes, ok?")
 else:
     print(f"We have a table for {clients} available. Please, follow me.")
+
 
 ## Ask the user for a number and tell if it is a multiple of 10 or not
 
@@ -28,12 +30,14 @@ if int(number) % 10 == 0:
 else:
     print(f"{number} is not a multiple of 10")
 
+
 ## Another way of doing it, but with strings
 
 if number[-1] == "0":
     print(f"{number} is a multiple of 10")
 else:
     print(f"{number} is not a multiple of 10")
+
 
 ## Write a code to ask for the ages of attending tourists
 ## Then give a sum of the tiket price
@@ -64,32 +68,28 @@ for attendant in attendants:
         continue
 print(f"The entry cost of the {len(attendants)} attendants is R${ticket}.")
 
-## Make an infinite loop
-
-#while True:
-#    print("All work and no play makes Jack a dull boy.")
 
 ## Create a dictionary with customers and their requested sandwitches
-
 
 available_sandwitches = ['bauru', 'croque madame', 'choripan', 'blt', 'tuna']
 requested_sandwitches = {}
 finished_sandwitches = {}
 poll_active = True
 
-name = input("What is your name?")
-sandwitch = input("What is your desired sandwitch?")
-activity = input("Would you like another request? (yes/no)")
+prompt_name = "What is your name?"
+prompkt_sandwitch = "What is your desired sandwitch?"
+prompt_activity = "Would you like another request? (yes/no)"
 
 while poll_active:
-    print(name)
-    print(sandwitch)
+    name = input(prompt_name)
+    sandwitch = input(prompkt_sandwitch)
     requested_sandwitches[name] = sandwitch
-    print(activity)
+    activity = input(prompt_activity)
     if activity == 'no':
         poll_active = False
     else:
         continue
+
 
 ## Restrain the orders to the available sandwitches
 ## Create another dictionary with while 'doing' the sandwitches
@@ -99,14 +99,24 @@ print("At the moment we sadly don't have tuna sandwitch.")
 available_sandwitches.remove('tuna')
 
 for name, sandwitch in requested_sandwitches.items():
-    if sandwitch in available_sandwitches:
+    if sandwitch in finished_sandwitches:
         finished_sandwitches[sandwitch] += 1
         print(f"{name.title()}, your {sandwitch} sandwitch is ready.")
+    elif sandwitch in available_sandwitches:
+        finished_sandwitches[sandwitch] = 1
+        print(f"{name.title()}, your {sandwitch} sandwitch is ready.")
     else:
-        print(f"{name.title()}, please request something else.")
+        print(f"{name.title()}, saddly we don't serve that sandwitch.")
+
 
 ## Print a dictionary with the finished products
 
 print("Today we did...")
 for key, value in finished_sandwitches.items():
-    pritn(f"{value} {key} sandwitches.")
+    print(f"{value} {key} sandwitches.")
+
+
+## Make an infinite loop
+
+while True:
+    print("All work and no play makes Jack a dull boy.")
