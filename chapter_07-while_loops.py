@@ -34,3 +34,37 @@ if number[-1] == "0":
     print(f"{number} is a multiple of 10")
 else:
     print(f"{number} is not a multiple of 10")
+
+## Write a code to ask for the ages of attending tourists
+## Then give a sum of the tiket price
+
+prompt = "What is the age of the next attendant?"
+prompt += "(write 'quit' whenever you are done)"
+attendants = []
+active = True
+while active:
+    age = input(prompt)
+    if age == 'quit':
+        break
+    else:
+        try: 
+            int(age)
+            attendants.append(age)
+        except ValueError:
+            print("Enter only whole numbers, please.")        
+
+ticket = 0
+for attendant in attendants:
+    attendant = int(attendant)
+    if attendant > 12:
+        ticket += 15
+    elif attendant >= 3:
+        ticket += 10
+    else:
+        continue
+print(f"The entry cost of the {len(attendants)} attendants is R${ticket}.")
+
+## Make an infinite loop
+
+while True:
+    print("All work and no play makes Jack a dull boy.")
