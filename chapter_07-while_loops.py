@@ -66,5 +66,47 @@ print(f"The entry cost of the {len(attendants)} attendants is R${ticket}.")
 
 ## Make an infinite loop
 
-while True:
-    print("All work and no play makes Jack a dull boy.")
+#while True:
+#    print("All work and no play makes Jack a dull boy.")
+
+## Create a dictionary with customers and their requested sandwitches
+
+
+available_sandwitches = ['bauru', 'croque madame', 'choripan', 'blt', 'tuna']
+requested_sandwitches = {}
+finished_sandwitches = {}
+poll_active = True
+
+name = input("What is your name?")
+sandwitch = input("What is your desired sandwitch?")
+activity = input("Would you like another request? (yes/no)")
+
+while poll_active:
+    print(name)
+    print(sandwitch)
+    requested_sandwitches[name] = sandwitch
+    print(activity)
+    if activity == 'no':
+        poll_active = False
+    else:
+        continue
+
+## Restrain the orders to the available sandwitches
+## Create another dictionary with while 'doing' the sandwitches
+
+print("At the moment we sadly don't have tuna sandwitch.")
+
+available_sandwitches.remove('tuna')
+
+for name, sandwitch in requested_sandwitches.items():
+    if sandwitch in available_sandwitches:
+        finished_sandwitches[sandwitch] += 1
+        print(f"{name.title()}, your {sandwitch} sandwitch is ready.")
+    else:
+        print(f"{name.title()}, please request something else.")
+
+## Print a dictionary with the finished products
+
+print("Today we did...")
+for key, value in finished_sandwitches.items():
+    pritn(f"{value} {key} sandwitches.")
