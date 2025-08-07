@@ -102,3 +102,67 @@ while True:
     else:
         print(f"{city_info['city'].title()} is a city in "\
               f"{city_info['country'].title()}.")
+
+
+## Create a list with a series of short messages
+
+
+
+
+## Pass the list into a function that shows those messages
+
+
+
+
+## Create a function that displays which messages were sent
+
+
+
+
+## Remake the last function to include the display the list of unsent messages
+
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+## Using *args, create a function that asks the user for a series of values
+
+
+
+
+## Create a function that calls for city_info data and include a **kwargs
+
+
+
+
+## Create a function that stores information on plants
+# This should include at least genus and species, but also **kwargs
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+## Create fnctions in a doc called printing_models.py
+
+
+
+
+
+## Call them here vsing
+# import name_mdl
+
+
+# from name_mdl import name_fnct
+
+
+# from name_mdl import name_fnct as nf
+
+
+# import name_mdl as nm
+
+
+# from name_mdl import *
+
+
+
