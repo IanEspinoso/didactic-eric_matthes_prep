@@ -161,18 +161,53 @@ print(already_sent)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ## Using *args, create a function that asks the user for a series of values
 
+def building_materials(*materials):
+    """Receive a list of materials and print them out."""
+    print("In this stage of the construction, we'll use:")
+    for material in materials:
+        print(f"- {material.title()}")
+    print("Let's get on with it, boys and gals!")
+
+building_materials('portland cement', 'gravel', 'water', 'rebar', 'mesh', 'block')
+building_materials('fine sand', 'rapid cement', 'lime')
+building_materials('tiles')
 
 
+## Recreate the function that calls for city_info data to include a **kwargs
 
-## Create a function that calls for city_info data and include a **kwargs
+def get_city_info(city, country, state=None, **city_info):
+    """Display a simple message about a city, using state and country"""
+    city_info.update({'city': city, 'country': country})
+    if state:
+        city_info['state'] = state
+    return(city_info)
 
+sao_paulo_info = get_city_info('sao paulo', 'brasil', population=11_900_000, founded=1554)
 
+print(sao_paulo_info)
 
 
 ## Create a function that stores information on plants
-# This should include at least genus and species, but also **kwargs
+# This should include at least genera and species, but also **kwargs
+
+def get_plant_info(species, genus='piper', **plant_info):
+    """Organize and display information of plants, including genus and species.
+    The default genus 'piper' can be changed, and other info might be added."""
+    plant_info.update({'species': species, 'genus': genus.title()})
+    return plant_info
+
+plant = get_plant_info('nigrum', popular_name='pimenta-do-reino', origin='Kerala')
+print(plant)
 
 
+# I got ahead of myself, and ended up researching about the main plant genera
+"""'piper' ,'nigrum', popular_name='pimenta-do-reino', origin='kerala'
+'psychotria' ,'viridis', popular_name='chacrona', origin='amazon'
+'ipomoea' ,'batatas', popular_name='batata doce', origin='peru'
+'ficus' ,'carica', popular_name='figueira', origin='jordan'
+'diospyros' , 'kaki', popular_name='caqui', origin='china'
+'allium' ,'cepa', popular_name='cebola', origin='iran'
+'syzygium' ,'aromaticum', popular_name='cravo', origin='indonesia'"""
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
