@@ -106,23 +106,56 @@ while True:
 
 ## Create a list with a series of short messages
 
-
+short_quotes = ["lock and load", "affirmative", "you require more vespene gas"]
 
 
 ## Pass the list into a function that shows those messages
 
+def show_messages(messages):
+    """Display the messages given in a list."""
+    for message in messages:
+        print(message)
+
+show_messages(short_quotes)
 
 
+## Create a function that passes the displayed messages to another list
 
-## Create a function that displays which messages were sent
+already_sent = []
+def send_messages(messages_tasked, messages_sent):
+    """Display the messages given in a list.
+    Record the displayed messages in another list"""
+    while messages_tasked:
+        message = messages_tasked.pop()
+        print(message)
+        messages_sent.append(message)
+        
+send_messages(short_quotes, already_sent)
+print("Those were the sent messages. Let's now show the remaining messages.")
+print(short_quotes)
+print("Now, the list of sent messages.")
+print(already_sent)
 
 
+## Call the function in a way that the original list stays intact
+# I'll have to redo it, since it got mangled by the function
 
+short_quotes = ["lock and load", "affirmative", "you require more vespene gas"]
+already_sent = []
 
-## Remake the last function to include the display the list of unsent messages
-
-
-
+def send_messages(messages_tasked, messages_sent):
+    """Display the messages given in a list.
+    Record the displayed messages in another list"""
+    while messages_tasked:
+        message = messages_tasked.pop()
+        print(message)
+        messages_sent.append(message)
+        
+send_messages(short_quotes[:], already_sent[:])
+print("Those were the sent messages. Let's now show the original list.")
+print(short_quotes)
+print("Now, the original, empty, list of sent messages.")
+print(already_sent)
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
