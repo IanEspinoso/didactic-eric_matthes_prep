@@ -7,6 +7,7 @@ class Restaurant:
         """Initializes name and type attributes."""
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.people_served = 0
 
 ## Create two functions within it, calling its attributes
 
@@ -82,3 +83,23 @@ user_1.greet_user()
 
 user_2.describe_user()
 user_2.greet_user()
+
+## Change the init method in Restaurant to include the number of people served
+## It should have a default number of '0'
+## Instantiate that class, then display the default number
+
+restaurant = Restaurant('los pollos hermanos', 'mexican')
+print(restaurant.people_served)
+
+## Show that number again, after changing it directly.
+
+
+## Create a method that allows to define the number of people served. Call it.-
+
+
+## Create a method that that increments that number. Call it.
+
+
+## Add a login attempts atribute in the User class and then create two methods
+## Create two methods: one to update it, and another to reset it. Call them.
+
