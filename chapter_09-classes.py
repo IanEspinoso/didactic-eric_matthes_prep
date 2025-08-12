@@ -153,11 +153,50 @@ print(user_0.login_attempts)
 
 ## Create a class that inherits attributes from another class
 
-class IceCreamStand:
+class IceCreamStand(Restaurant):
     """Restaurant class daughter, with ice cream specificities."""
 
 
-    def __init__(self, flavors, restaurant_name, cuisine_type='ice cream stand')
+    def __init__(self, restaurant_name, 
+                 cuisine_type='ice cream stand', *flavors):
         """Initalize the ice cream stand"""
         super().__init__(restaurant_name, cuisine_type)
         self.flavors = flavors
+
+## Create a method in that class that displays the flavors:
+
+    def display_flavors(self):
+        """Displays the flavors."""
+        print("This are our available flavors:")
+        for flavor in self.flavors:
+            print(f"{flavor.title()}")
+
+napoletice = IceCreamStand('napoletice', 'ice cream stand', 
+                           'strawberry', 'vanilla', 'chocolate')
+napoletice.display_flavors()
+
+## Create an Admin class, daughter of User, with a privileges attribute
+
+class Admin(User):
+    """Class derived from User, with admin privileges."""
+
+    def __init__(self, first_name, last_name, *privileges, **kwargs):
+        """Initiates the Admin class."""
+        super().__init__(first_name, last_name, **kwargs)
+        self.privileges = privileges
+
+## Write a method called show_privileges(), instantiate and call it
+
+    def show_privileges(self):
+        """Displays listed privileges."""
+        print("This are the admin privileges:")
+        for privilege in self.privileges:
+            print(privilege)
+
+the_boss = Admin('bruce', 'wayne', 
+                 'creates other users', 'sees all the backlog',
+                 'access to admin dashboard', city='gotham')
+
+the_boss.show_privileges()
+
+## Code a car.py and an electric_car.py documents, import and run them here.
