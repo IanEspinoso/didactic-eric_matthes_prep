@@ -27,3 +27,35 @@ class Car:
     def increment_odometer(self, miles):
         """Adds a given amount to the odometer reading."""
         self.odometer_reading += miles
+
+class Battery:
+    """Simple attepmt to model an electric car battery."""
+
+    def __init__(self, battery_size=40):
+        """Initializes the battery's attributes."""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Displays a message describing the battery's size."""
+        print(f"This car has a {self.battery_size}-kWh battery.")
+    
+    def get_range(self):
+        """
+        Displays a sentence on the distance that the car run 
+        with that battery.
+        """
+        if self.battery_size == 40:
+            range = 150
+        elif self.battery_size == 65:
+            range = 225
+            print(f"This car can go about {range} miles on a full charge.")
+
+class ElectricCar(Car):
+    """Represents aspects of the car, specific from electric vehicles."""
+    def __init__(self, make, model, year):
+        """
+        Initializes the attributes from the father-class.
+        Then, initializes the specific attributes from electric vehicles.
+        """
+        super().__init__(make, model, year)
+        self.battery = Battery()
