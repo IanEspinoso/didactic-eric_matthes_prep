@@ -150,3 +150,14 @@ user_0.increment_login_attempts(10)
 print(user_0.login_attempts)
 user_0.reset_login_attempts()
 print(user_0.login_attempts)
+
+## Create a class that inherits attributes from another class
+
+class IceCreamStand:
+    """Restaurant class daughter, with ice cream specificities."""
+
+
+    def __init__(self, flavors, restaurant_name, cuisine_type='ice cream stand')
+        """Initalize the ice cream stand"""
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
