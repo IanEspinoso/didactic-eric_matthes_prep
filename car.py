@@ -1,7 +1,3 @@
-"""Class representing a car."""
-## Import the battery library
-from battery import Battery
-
 class Car:
     """Simple attempt to representing a car."""
 
@@ -31,24 +27,3 @@ class Car:
     def increment_odometer(self, miles):
         """Adds a given amount to the odometer reading."""
         self.odometer_reading += miles
-
-## Code an electric car.
-
-class ElectricCar(Car):
-    """Represents aspects of the car, specific from electric vehicles."""
-    
-    def __init__(self, make, model, year):
-        """
-        Initializes the attributes from the father-class.
-        Then, initializes the specific attributes from electric vehicles.
-        """
-        super().__init__(make, model, year)
-        self.battery = Battery()
-
-    def upgrade_battery(self):
-        """
-        Verifies the size of the battery, setting its capacity as 65, 
-        if necessary.
-        """
-        if self.battery.battery_size < 65:
-            self.battery.battery_size = 65
