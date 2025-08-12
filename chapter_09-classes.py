@@ -238,7 +238,7 @@ class Battery:
         """Initializes the battery's attributes."""
         self.battery_size = battery_size
 
-    def describe_battery(self)
+    def describe_battery(self):
         """Displays a message describing the battery's size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
     
@@ -251,10 +251,11 @@ class Battery:
             range = 150
         elif self.battery_size == 65:
             range = 225
-            print(f"This car can go about {range} miles on a full charge.")
+        print(f"This car can go about {range} miles on a full charge.")
 
 class ElectricCar(Car):
     """Represents aspects of the car, specific from electric vehicles."""
+    
     def __init__(self, make, model, year):
         """
         Initializes the attributes from the father-class.
@@ -263,5 +264,23 @@ class ElectricCar(Car):
         super().__init__(make, model, year)
         self.battery = Battery()
 
-        
+    def upgrade_battery(self):
+        """
+        Verifies the size of the battery, setting its capacity as 65, 
+        if necessary.
+        """
+        if self.battery.battery_size < 65:
+            self.battery.battery_size = 65
 
+
+## Instantiate the electric car, and use the upgrade battery function.
+
+my_green_car = ElectricCar('sonya', 'v0.1', 1898)
+
+my_green_car.battery.get_range()
+
+print('Now updating...')
+
+my_green_car.upgrade_battery()
+
+my_green_car.battery.get_range()
