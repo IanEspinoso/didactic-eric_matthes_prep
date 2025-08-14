@@ -1,7 +1,8 @@
 from restaurant import Restaurant, IceCreamStand
-from battery import Battery
-from car import ElectricCar, Car
+from car import ElectricCar
 from user import User, Admin
+from die import Die
+from random import randint, choice
 
 ##Instantiate it and call it for testing
 
@@ -105,3 +106,34 @@ print('Now updating...')
 my_green_car.upgrade_battery()
 
 my_green_car.battery.get_range()
+
+## Throw a die 10 times
+
+die = Die(6)
+for i in range(1,11):
+    print(die.roll_die())
+
+## Create a list with 10 items, and a contest, pulling random items
+
+contest_list = ['a', 'b', 'c', 'd', 1, 2, 3, 5, 8, 13]
+winner_list = []
+
+for i in range(4):
+    winner_list.append(choice(contest_list))
+
+print(f"Any ticket with the following {len(set(winner_list))} items will win:")
+for i in set(winner_list):
+    print(i)
+
+## Create an analysis pulling a ticket a random number of times, until winning
+
+my_ticket = ['a', 'b', 1, 2]
+losing_times = 0
+
+while winner_list != my_ticket:
+    losing_times += 1
+    winner_list = []
+    for i in range(4):
+        winner_list.append(choice(contest_list))
+
+print(f"You won {round(100/losing_times, 2)}% of the times.")
