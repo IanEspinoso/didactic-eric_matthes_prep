@@ -1,6 +1,6 @@
 from restaurant import Restaurant, IceCreamStand
 from battery import Battery
-from car import ElectricCar, Car
+from car import ElectricCar
 from user import User, Admin
 
 ##Instantiate it and call it for testing
