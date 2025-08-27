@@ -2,12 +2,20 @@ from pathlib import Path
 
 ## Exercise 10.1
 
+<<<<<<< HEAD
 """path = Path('learning_python.txt')
+=======
+path = Path('learning_python.txt')
+>>>>>>> a41de5f (Finish exercises from page 243)
 contents = path.read_text()
 "print(contents)" # First, direct reading
 
 lines = contents.splitlines()
+<<<<<<< HEAD
 for line in lines: # Second, reading line by line
+=======
+"""for line in lines: # Second, reading line by line
+>>>>>>> a41de5f (Finish exercises from page 243)
     print(line)"""
 
 
@@ -24,13 +32,18 @@ for line in lines: # Second, reading line by line
 
 ## Exercise 10.4
 
+<<<<<<< HEAD
 """answer = input("What's your name?")
 path = Path('guest.txt')
 path.write_text(answer)"""
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.5
 
+<<<<<<< HEAD
 """another = 'y'
 new_guest = ''
 
@@ -42,10 +55,14 @@ while another == 'y':
 guests = Path('guests_book.txt')
 guests.write_text(new_guest)
 guests.read_text()"""
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.6
 
+<<<<<<< HEAD
 """try:
     n1 = input("Enter the first number")
     n1 = int(n1)
@@ -54,10 +71,14 @@ guests.read_text()"""
     print(f"The sum is {n1 + n2}")
 except ValueError:
     print("The numbers should be integers, not strings.")"""
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.7
 
+<<<<<<< HEAD
 """n1, n2 = 0, 0
 
 while True:
@@ -73,10 +94,14 @@ while True:
         print(f"The sum is {n1 + n2}")
     except ValueError:
         print("The numbers should be integers, not strings.")"""
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.8
 
+<<<<<<< HEAD
 """try:
     print("\nThis are the cats:")
     for cat in Path('cats.txt').read_text().splitlines():
@@ -86,11 +111,14 @@ while True:
         print(dog)
 except FileNotFoundError:
     print("File Not Found: document does not exists or is elsewhere.")"""
+=======
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 
 ## Exercise 10.9
 
+<<<<<<< HEAD
 """try:
     cats =  Path('cats.txt').read_text().splitlines()
     print("\nThis are the cats:")
@@ -102,10 +130,14 @@ except FileNotFoundError:
         print(dog)
 except FileNotFoundError:
     pass"""
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.10
 
+<<<<<<< HEAD
 def most_frequent_word(path):
     """Returns the word with the highest count in a txt."""
    
@@ -132,6 +164,10 @@ def most_frequent_word(path):
 moby_dick_word = most_frequent_word('moby_dick.txt')
 
 print('helo world')
+=======
+
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 ## Exercise 10.11
 
