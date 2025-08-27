@@ -1,0 +1,8 @@
+In Python, we can install Python execute scripts or interactive sessions.
+In Python, we can work with strings, integers, floats, and use basic string methods.
+In Python, we can create ordered collections, index, slice, add and remove items.
+In Python, we can loop through lists with for, using range(), list comprehensions, and generate simple data.
+In Python, we can create key–value pairs, access and modify entries, nest dictionaries, and loop through them.
+In Python, we can repeat with while loops, plus flags and break conditions.
+In Python, we can use object-oriented programming, defining classes, creating objects, using attributes, methods and inheritance.
+In Python, we can handle errors with try-except, and use with statements for safe file access.
