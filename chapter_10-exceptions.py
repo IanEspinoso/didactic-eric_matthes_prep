@@ -3,7 +3,11 @@ from pathlib import Path
 ## Exercise 10.1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 """path = Path('learning_python.txt')
+=======
+path = Path('learning_python.txt')
+>>>>>>> a41de5f (Finish exercises from page 243)
 =======
 path = Path('learning_python.txt')
 >>>>>>> a41de5f (Finish exercises from page 243)
@@ -12,7 +16,11 @@ contents = path.read_text()
 
 lines = contents.splitlines()
 <<<<<<< HEAD
+<<<<<<< HEAD
 for line in lines: # Second, reading line by line
+=======
+"""for line in lines: # Second, reading line by line
+>>>>>>> a41de5f (Finish exercises from page 243)
 =======
 """for line in lines: # Second, reading line by line
 >>>>>>> a41de5f (Finish exercises from page 243)
@@ -33,9 +41,13 @@ for line in lines: # Second, reading line by line
 ## Exercise 10.4
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 """answer = input("What's your name?")
 path = Path('guest.txt')
 path.write_text(answer)"""
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
@@ -43,6 +55,7 @@ path.write_text(answer)"""
 
 ## Exercise 10.5
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 """another = 'y'
 new_guest = ''
@@ -58,10 +71,14 @@ guests.read_text()"""
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.6
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 """try:
     n1 = input("Enter the first number")
@@ -74,10 +91,14 @@ except ValueError:
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.7
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 """n1, n2 = 0, 0
 
@@ -97,10 +118,14 @@ while True:
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.8
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 """try:
     print("\nThis are the cats:")
@@ -113,11 +138,14 @@ except FileNotFoundError:
     print("File Not Found: document does not exists or is elsewhere.")"""
 =======
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 
 ## Exercise 10.9
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 """try:
     cats =  Path('cats.txt').read_text().splitlines()
@@ -133,10 +161,14 @@ except FileNotFoundError:
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 
 
 ## Exercise 10.10
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 def most_frequent_word(path):
     """Returns the word with the highest count in a txt."""
@@ -164,6 +196,10 @@ def most_frequent_word(path):
 moby_dick_word = most_frequent_word('moby_dick.txt')
 
 print('helo world')
+=======
+
+
+>>>>>>> a41de5f (Finish exercises from page 243)
 =======
 
 
