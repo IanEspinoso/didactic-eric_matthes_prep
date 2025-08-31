@@ -4,6 +4,7 @@ from pathlib import Path
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 """path = Path('learning_python.txt')
 =======
 path = Path('learning_python.txt')
@@ -11,10 +12,14 @@ path = Path('learning_python.txt')
 =======
 path = Path('learning_python.txt')
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+path = Path('learning_python.txt')
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
 contents = path.read_text()
 "print(contents)" # First, direct reading
 
 lines = contents.splitlines()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 for line in lines: # Second, reading line by line
@@ -24,6 +29,9 @@ for line in lines: # Second, reading line by line
 =======
 """for line in lines: # Second, reading line by line
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+"""for line in lines: # Second, reading line by line
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
     print(line)"""
 
 
@@ -42,6 +50,7 @@ for line in lines: # Second, reading line by line
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 """answer = input("What's your name?")
 path = Path('guest.txt')
 path.write_text(answer)"""
@@ -51,10 +60,14 @@ path.write_text(answer)"""
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
 
 
 ## Exercise 10.5
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 """another = 'y'
@@ -74,10 +87,14 @@ guests.read_text()"""
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
 
 
 ## Exercise 10.6
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 """try:
@@ -94,10 +111,14 @@ except ValueError:
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
 
 
 ## Exercise 10.7
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 """n1, n2 = 0, 0
@@ -121,10 +142,14 @@ while True:
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
 
 
 ## Exercise 10.8
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 """try:
@@ -140,11 +165,14 @@ except FileNotFoundError:
 >>>>>>> a41de5f (Finish exercises from page 243)
 =======
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
 
 
 
 ## Exercise 10.9
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 """try:
@@ -164,10 +192,14 @@ except FileNotFoundError:
 =======
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
 
 
 ## Exercise 10.10
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 def most_frequent_word(path):
@@ -204,6 +236,10 @@ print('helo world')
 
 
 >>>>>>> a41de5f (Finish exercises from page 243)
+=======
+
+
+>>>>>>> a41de5f5eb33981e22b6f63f957c5cfe1677dde3
 
 ## Exercise 10.11
 
