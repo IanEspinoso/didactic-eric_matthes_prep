@@ -1,4 +1,5 @@
-"""from pathlib import Path"""
+from pathlib import Path
+import json
 
 ## Exercise 10.1
 
@@ -137,20 +138,114 @@ print('helo world')"""
 
 ## Exercise 10.11
 
+# request value
 
+#path = Path('favorite_number.json')
+
+#def get_new_number(path):
+"""Requests a new favorite number."""
+
+"""    f_number = input("What is your favorite number?")
+    contents = json.dumps(f_number)
+    path.write_text(contents)
+
+get_new_number(path)"""
+
+# read value
+
+#def get_stored_number(path):
+"""Gets the stored favorite number, if available."""
+
+"""    if path.exists():
+        contents = path.read_text()
+        f_number = json.loads(contents)
+        print(f"I know your favorite number! It is {f_number}.")
+    else:
+        prinnt("I don't know your favorite number yet!")
+
+get_stored_number(path)"""
 
 
 ## Exercise 10.12
 
+# both in a single function
 
+#def favorite_number():
+"""Tells your favorite number, if stored, and requests it, if not."""
+
+"""    path = Path('favorite_number.json')
+    if path.exists():
+        contents = path.read_text()
+        f_number = json.loads(contents)
+        print(f"I know your favorite number! It is {f_number}.")
+    else:
+        f_number = input("What is your favorite number?")
+        contents = json.dumps(f_number)
+        path.write_text(contents)
+        print(f"We'll remember your favorite number is {f_number}!")
+
+favorite_number()"""
 
 
 ## Exercise 10.13
 
-
-
+#def remember_me():
+"""Gather information on the user, and stores it into a dictionary."""
+"""
+    path = Path('remember_me.json')
+    if path.exists():
+        contents = path.read_text()
+        me_info = json.loads(contents)
+        print("Your information is:")
+        for key,val in me_info.items():
+            print(f"Your {key} is {val}.")
+    else:
+        info_remembered = {}
+        me_name = input('What is your name?')
+        info_remembered['name'] = me_name
+        proceed = 'y'
+        while proceed == 'y':
+            me_key = input('What do you want to tell about yourself? (ex: city, age, etc)')
+            me_value = input('What about it?')
+            info_remembered[me_key] = me_value
+            proceed = input('Do you want to give another information? (y/n)')
+        contents = json.dumps(info_remembered)
+        path.write_text(contents)
+"""
+#remember_me()
 
 ## Exercise 10.14
 
+#def get_new_user_name(path, info_remembered):
+"""Gather information on a new user."""
+"""
+    proceed = 'y'
+    while proceed == 'y':
+        me_key = input('What do you want to tell about yourself? (ex: city, age, etc)')
+        me_value = input('What about it?')
+        info_remembered[me_key] = me_value
+        proceed = input('Do you want to give another information? (y/n)')
+    contents = json.dumps(info_remembered)
+    path.write_text(contents)
+"""
+
+#def greet_user():
+"""Greet a recorded user."""
+
+"""    path = Path('remember_me.json')
+    if path.exists():
+        contents = path.read_text()
+        me_info = json.loads(contents)
+        info_remembered = {}
+        me_name = input('What is your name?')
+        info_remembered['name'] = me_name
+        condition = info_remembered['name'] == me_info['name']
+        if condition:
+            print("Your information is:")
+            for key,val in me_info.items():
+                print(f"Your {key} is {val}.")
+        else:
+            get_new_user_name(path, info_remembered)
 
 
+greet_user()"""
